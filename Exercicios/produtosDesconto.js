@@ -23,3 +23,28 @@
 //saída de dados
 // = mostrar a saída dos produtos que ela escolher e a quantidade e o preço de cada produto
 // = mostrar também o desconto de cada produto
+
+export function ProdutoDesconto() {
+    let nomeProduto = prompt("Digite um nome do produto");
+    let quantidadeProduto = parseInt(prompt("Digite a quantidade de produto"));
+    let precoUnitario = parseFloat(prompt("Digite o valor da unidade do produto"));
+    let total = (quantidadeProduto * precoUnitario) * 0.02;
+    let total1 = (quantidadeProduto * precoUnitario) * 0.03;
+    let total2 = (quantidadeProduto * precoUnitario) * 0.05
+
+
+    if (quantidadeProduto <= 5) {
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 2% ${(quantidadeProduto * precoUnitario) * 0.02} reais `);
+
+    }
+    else if (quantidadeProduto > 5 && quantidadeProduto <= 10) {
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 3% ${(quantidadeProduto * precoUnitario) * 0.03} reais`);
+
+    }
+    else {
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario} , você tera um desconto de 5% ${(quantidadeProduto * precoUnitario) * 0.05} reais`);
+    }
+}
+//saída de dados
+// = mostrar a saída dos produtos que ela escolher e a quantidade e o preço de cada produto
+// = mostrar também o desconto de cada produto

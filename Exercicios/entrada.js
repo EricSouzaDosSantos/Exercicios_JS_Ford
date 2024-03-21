@@ -3,6 +3,8 @@ import { Placar } from "./jogoFutebol.js"
 import { sort } from "./nomesSortidos.js"
 import { Desconto } from "./descontoFuncionario.js"
 import { Gasolina } from "./postoGasolina.js"
+import { ProdutoDesconto } from "./produtosDesconto.js"
+import { Mortalidade } from "./taxaMortalidade.js"
 
 let entradaSaida = true;
 
@@ -45,10 +47,13 @@ while (entradaSaida) {
 
         case 6:
 
+        ProdutoDesconto()
 
             break
 
         case 7:
+
+        Mortalidade()
 
 
             break
@@ -61,7 +66,7 @@ while (entradaSaida) {
 
         default:
 
-            alert("Falha")
+            alert("opção inválida")
 
             break;
     }
