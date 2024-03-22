@@ -31,11 +31,11 @@ export function Mortalidade() {
     switch (tipoDado) {
         case 1:
             let taxaNatalidade = (quantidadeCrianca * 1000) / numeroHabitantes;
-            alert(`A quantidade de criança nascidas ${quantidadeCrianca} e a taxa de natalidade ${taxaNatalidade}`);
+            alert(`A quantidade de criança nascidas é ${quantidadeCrianca} e a taxa de natalidade ${taxaNatalidade.toFixed(0)}%`);
             break;
         case 2:
             let taxaMortalidade = (numeroObito * 1000) / numeroHabitantes;
-            alert(`A quantidade de óbitos ${numeroObito} e a taxa de mortalidade ${taxaMortalidade}`);
+            alert(`A quantidade de óbitos é ${numeroObito} e a taxa de mortalidade ${taxaMortalidade.toFixed(0)}%`);
             break;
 
         default:
