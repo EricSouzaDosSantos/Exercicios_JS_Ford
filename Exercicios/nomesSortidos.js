@@ -12,12 +12,12 @@ export function sort(){
         nomes.push(nome)
     }
     let procurar = prompt("Chute algum nome:")
-    if(procurar == nomes[length]){
+    if(nomes.includes(procurar)){
         alert(`Você acertou um dos nomes a lista de nomes tem os seguintes nomes: (${nomes}) e você acertou com nome ${procurar}`)
     }else{
         alert("você errou o nome tente novamente")
     }
-    alert(`os nomes inseridos foram: ${nomes}`)
+    alert(`os nomes inseridos foram: ${nomes['\n']}`)
     
 
 

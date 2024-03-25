@@ -34,15 +34,17 @@ export function ProdutoDesconto() {
 
 
     if (quantidadeProduto <= 5) {
-        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 2% ${(quantidadeProduto * precoUnitario) * 0.02} reais `);
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 2% ${(quantidadeProduto * precoUnitario) * 0.02} reais com desconto ele ficara ${(precoUnitario - total).toFixed(1)}`);
 
     }
     else if (quantidadeProduto > 5 && quantidadeProduto <= 10) {
-        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 3% ${(quantidadeProduto * precoUnitario) * 0.03} reais`);
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 3% ${(quantidadeProduto * precoUnitario) * 0.03} reais com desconto ele ficara ${(precoUnitario - total1).toFixed(1)}`);
+
 
     }
     else {
-        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario} , você tera um desconto de 5% ${(quantidadeProduto * precoUnitario) * 0.05} reais`);
+        alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario} , você tera um desconto de 5% ${(quantidadeProduto * precoUnitario) * 0.05} reais com desconto ele ficara ${(precoUnitario - total2).toFixed(1)}`);
+
     }
 }
 //saída de dados
