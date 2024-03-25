@@ -43,7 +43,15 @@ export function Mortalidade() {
 
     switch (tipoDado) {
         case 1:
-            let taxaNatalidade = (quantidadeCrianca * 1000) / numeroHabitantes;
+            let taxaNatalidade
+            do{
+            taxaNatalidade = (quantidadeCrianca * 1000) / numeroHabitantes;
+            
+            if(isNaN(taxaNatalidade)){
+                alert("Digite um NUMERO ao inves de letras")
+            }
+            }while(isNaN(taxaNatalidade))
+            
             alert(`A quantidade de criança nascidas é ${quantidadeCrianca} e a taxa de natalidade ${taxaNatalidade.toFixed(0)}%`);
             break;
         case 2:
