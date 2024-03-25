@@ -20,12 +20,25 @@
 // imprimir na tela a taxa de mortalidade ou natalidade
 
 export function Mortalidade() {
-    let tipoDado = parseInt(prompt(`Qual voce deseja calcular
-1-Natalidade
-2-Mortalidade`));
-    let quantidadeCrianca = parseInt(prompt("Quantas crianças nasceram"));
-    let numeroHabitantes = parseInt(prompt("Quantos habitantes tem?"));
-    let numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
+
+    let tipoDado;
+    let quantidadeCrianca;
+    let numeroHabitantes;
+    let numeroObito;
+
+
+
+    do {
+        tipoDado = parseInt(prompt(`Qual voce deseja calcular
+    1-Natalidade
+    2-Mortalidade`));
+    } while (tipoDado !== 1 && tipoDado !== 2);
+
+    do{
+    quantidadeCrianca = parseInt(prompt("Quantas crianças nasceram"));
+    numeroHabitantes = parseInt(prompt("Quantos habitantes tem?"));
+    numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
+    }while(isNaN(quantidadeCrianca) || isNaN(numeroHabitantes) || isNaN(numeroObito))
 
 
     switch (tipoDado) {
